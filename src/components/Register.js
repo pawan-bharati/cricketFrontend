@@ -62,9 +62,9 @@ export default class Register extends Component {
                             value={this.state.fname} onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
-                        <Label for='lastName'>Last Name</Label>
-                        <Input type='text' name='lastName' id='lastName'
-                            value={this.state.lastName} onChange={this.handleChange} />
+                        <Label for='lname'>Last Name</Label>
+                        <Input type='text' name='lname' id='lname'
+                            value={this.state.lname} onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
                         <Label for='username'>Username</Label>
