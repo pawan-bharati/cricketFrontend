@@ -76,6 +76,16 @@ export default class Register extends Component {
                         <Input type='password' name='password' id='password'
                             value={this.state.password} onChange={this.handleChange} />
                     </FormGroup>
+                    <FormGroup>
+                        <Label for='address'>Address</Label>
+                        <Input type='text' name='address' id='address'
+                            value={this.state.password} onChange={this.handleChange} />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for='number'>Password</Label>
+                        <Input type='text' name='number' id='number'
+                            value={this.state.password} onChange={this.handleChange} />
+                    </FormGroup>
                     <Button color='primary' onClick={this.register}>Sign Up</Button>
                     <FormText>Already a user? <Link to='/'> Login here!</Link></FormText>
                 </Form>
