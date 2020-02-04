@@ -23,7 +23,7 @@ class Login extends Component {
     }
     submitForm = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/users/login', this.state)
+        axios.post('http://localhost:4000/register/login_user', this.state)
             .then((response) => {
                 console.log(response.data)
                 localStorage.setItem('token', response.data.token)
