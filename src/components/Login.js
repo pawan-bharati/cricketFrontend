@@ -29,7 +29,7 @@ class Login extends Component {
                 localStorage.setItem('token', response.data.token)
                 this.setState({ isLoggedIn: true })
             }).catch((err) => console.log(err.response))
-        this.setState({ username: '', password: '' })
+        this.setState({ email: '', password: '' })
     }
     render() {
 
