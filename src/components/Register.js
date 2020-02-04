@@ -57,9 +57,9 @@ export default class Register extends Component {
                 <h2>Sign Up</h2>
                 <Form>
                     <FormGroup>
-                        <Label for='firstName'>First Name</Label>
-                        <Input type='text' name='firstName' id='firstName'
-                            value={this.state.firstName} onChange={this.handleChange} />
+                        <Label for='fname'>First Name</Label>
+                        <Input type='text' name='fname' id='fname'
+                            value={this.state.fname} onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
                         <Label for='lastName'>Last Name</Label>
