@@ -67,7 +67,7 @@ export default class Register extends Component {
                             value={this.state.lname} onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
-                        <Label for='email'>Username</Label>
+                        <Label for='email'>Email</Label>
                         <Input type='text' name='email' id='email'
                             value={this.state.email} onChange={this.handleChange} />
                     </FormGroup>
@@ -79,12 +79,12 @@ export default class Register extends Component {
                     <FormGroup>
                         <Label for='address'>Address</Label>
                         <Input type='text' name='address' id='address'
-                            value={this.state.password} onChange={this.handleChange} />
+                            value={this.state.address} onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
-                        <Label for='number'>Password</Label>
+                        <Label for='number'>Number</Label>
                         <Input type='text' name='number' id='number'
-                            value={this.state.password} onChange={this.handleChange} />
+                            value={this.state.number} onChange={this.handleChange} />
                     </FormGroup>
                     <Button color='primary' onClick={this.register}>Sign Up</Button>
                     <FormText>Already a user? <Link to='/'> Login here!</Link></FormText>
