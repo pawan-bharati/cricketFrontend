@@ -30,7 +30,7 @@ export default class Register extends Component {
         e.preventDefault();
         console.log(this.state);
 
-        axios.post('http://localhost:3001/users/signup', this.state)
+        axios.post('http://localhost:4000/register_route/register_user', this.state)
             .then((response) => {
                 console.log(response.data);
                 localStorage.setItem('token', response.data.token)
