@@ -16,8 +16,7 @@ function App() {
           <Route exact path='/' component={Login} />
           { <Route path='/register' component={Register} /> }
           {<Route path='/dashboard' component={Dashboard} /> }
-          {/* <PrivateRoute path='/profile' component={UserProfile} /> */}
-          
+                   
         </Switch>
       </BrowserRouter>
     </Container>
