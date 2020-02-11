@@ -32,7 +32,7 @@ class UsersComponent extends Component {
 					<td>{users.lname}</td>
 					<td>{users.address}</td>
 					<td>{users.email}</td>
-					<td>{users.phone}</td>
+					<td>{users.number}</td>
 					<td>
 						<a>
 							<Button className="btn btn-danger" onClick={() => this.deleteuser(users._id)}>Delete</Button>
@@ -53,7 +53,7 @@ class UsersComponent extends Component {
 										<th>Last Name</th>
 										<th>Address</th>
 										<th>Email</th>
-										<th>Phone</th>
+										<th>number</th>
 										<th>Delete</th>
 									</tr>
 								</thead>
