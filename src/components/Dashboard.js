@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Button, Navbar, Nav, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink } from 'reactstrap'
+import Slider from './Slider';
 import { withRouter } from 'react-router-dom'
+
+
 
 class Navigation extends Component {
     constructor(props) {
@@ -23,6 +26,7 @@ class Navigation extends Component {
     }
     render() {
         return (
+            <>
             <Navbar color='dark' dark expand='md'>
                 <NavbarBrand href='/dashboard'>Todo App</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
@@ -39,7 +43,13 @@ class Navigation extends Component {
                         </NavItem>
                     </Nav>
                 </Collapse>
+                
             </Navbar>
+            <Slider></Slider>
+            </>
+            
+            
+            
         )
     }
 }
